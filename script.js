@@ -1,12 +1,15 @@
 let textInput = document.querySelector(".textInput"),
     form = document.querySelector(".form"),
     collection = document.querySelector(".collection"),
-    submit = document.querySelector(".submit");
+    submit = document.querySelector(".submit"),
+    remove = document.querySelector(".delete"),
+    item = document.querySelector(".added");
 
-form.addEventListener("submit", addToList);
+submit.addEventListener("click", addToList);
+collection.addEventListener("click", removeItem);
 
 function addToList(e){
-    
+
     let text = textInput.value;
     let li = document.createElement("li");
     li.classList = "added";
@@ -20,17 +23,10 @@ function addToList(e){
     collection.appendChild(li);
 
     e.preventDefault();
-
-    removeItem();
 }
 
 function removeItem(){
-
-    deleteButton.forEach(function(item){
-        item.addEventListener("click", function(){
-            if(deleteButton.parentElement.classList.contains(".added")){
-                console.log(deleteButton.parentElement)
-            }
-        })
-    });
+    if(remove.parentElement.classList.contains(".added")){
+        console.log(remove.parentElement)
+    }
 }
