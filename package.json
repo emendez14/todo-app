@@ -1,0 +1,24 @@
+{
+  "name": "todo",
+  "version": "1.0.0",
+  "description": "first project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emendez14/todo-app.git"
+  },
+  "author": "andy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/emendez14/todo-app/issues"
+  },
+  "homepage": "https://github.com/emendez14/todo-app#readme",
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "react": "^16.12.0"
+  }
+}
